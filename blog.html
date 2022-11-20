@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      #titlepage {
+        height: 100vh;
+        background-image: url("./beach_truck_boat.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      #titlecard {
+        position: relative;
+        top: 10em;
+      }
+      .text-elias {
+        font-style: normal;
+        /* text-align: justify; */
+      }
+      .text-annika {
+        font-style: italic;
+        /* text-align: justify; */
+      }
+      .cutoutimg {
+        position: absolute;
+        left: -5em;
+        top: -2em;
+        height: 20em;
+      }
+      .cutoutimg2 {
+        position: absolute;
+        right: -5em;
+        top: -3.5em;
+        height: 17em;
+      }
+      #beach-bg {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./beach_bg.jpeg");
+        background-repeat: repeat-y;
+        background-size: contain;
+        background-position: center center;
+      }
+      .divider {
+        position: relative;
+        background: #2c3e50;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: -0%;
+        top: 100%;
+        z-index: 10;
+        display: block;
+        height: 30px;
+        background-size: 30px 100%;
+        background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%),
+          linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+        background-position: 0 0;
+      }
+
+      .bg-paper {
+        position: relative;
+        z-index: 0;
+        margin-bottom: 10rem;
+      }
+
+      .bg-paper > p {
+        padding: 0% 11% 0% 11%;
+      }
+
+      .bg-paper > img {
+        width: 100%;
+        padding: 1rem 11% 1rem 11%;
+      }
+
+      .bg-paper::before {
+        content: " ";
+        position: absolute;
+        height: 128%;
+        width: 100%;
+        background-image: url("bg-paper.png");
+        background-size: 100% 100%;
+        top: -14%;
+        z-index: -1;
+      }
+
+      .bg-picture {
+        position: relative;
+        z-index: 0;
+        margin-bottom: 10rem;
+      }
+
+      .bg-picture > p {
+        padding: 0% 11% 0% 11%;
+      }
+
+      .bg-picture > img {
+        width: 100%;
+        padding: 1rem 11% 1rem 11%;
+      }
+
+      .bg-picture::before {
+        content: " ";
+        position: absolute;
+        height: 128%;
+        width: 100%;
+        background-image: url("polaroid.png");
+        background-size: 100% 100%;
+        top: -14%;
+        z-index: -1;
+      }
+
+      @media screen and (min-width: 768px) {
+        /* Styles go here */
+        .move-right {
+          position: relative;
+          left: -3rem;
+        }
+        .move-left {
+          position: relative;
+          left: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="titlepage" class="overflow-hidden">
+      <div
+        class="container pt-1 d-flex justify-content-center"
+        style="max-width: 50rem"
+      >
+        <div id="titlecard" class="bg-light p-5 rounded">
+          <img class="cutoutimg" src="./elias_bw.png" />
+          <img class="cutoutimg2" src="./annika_bw.png" />
+          <h1 class="display-1 text-dark"><strong>Mzungu</strong> in Afrika</h1>
+          <p class="text-dark">
+            Ein Reiseblog über Annikas und Elias "Abenteuer" in Tanzania
+          </p>
+        </div>
+      </div>
+      <p
+        class="w-100 text-center text-dark"
+        style="position: absolute; bottom: 0px"
+      >
+        <strong>Scroll down ...</strong>
+      </p>
+    </div>
+    <div class="divider">
+      <div class="container py-5 text-light" style="max-width: 50rem">
+        <span class="h5 mt-3">Kapitel 1</span>
+        <h2 class="h1">Über das Ziel hinausgeschossen</h2>
+        <ul class="chapter-keywords mb-4">
+          <li class="badge bg-secondary">Anreise</li>
+          <li class="badge bg-dark">Daressalam</li>
+          <li class="badge bg-secondary">Stonetown, Zanzibar</li>
+          <li class="badge bg-dark">Nungwi, Zanzibar</li>
+        </ul>
+      </div>
+    </div>
+    <div id="beach-bg" class="py-5">
+      <div class="container my-5" style="max-width: 50rem">
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>Koffer packen ist ja immer absolut mein Ding!
+            Jeder der mich kennt weiß das. Am allerliebsten gehe ich diesem
+            Hobby voll Euphorie am Vorabend einer Reise nach. Das Gefühl ist
+            einfach einzigartig: Ein wunderbarer Cocktail von Stress, Aufregung,
+            Panik, Hilflosigkeit und Frust begleitet mich regelmäßig in dieser
+            durchaus misslichen Situation. So ist es fast ein Wunder, dass ich
+            vor dieser großen Reise meinen Rucksack nach einer Woche
+            Vorbereitung bereits nachmittags schließen kann und dann, etwas
+            irritiert über meine eigene Gelassenheit, mich auf den Aufbruch zu
+            freuen beginne. Um 2 Uhr nachts gehts dann auf die Piste. Mit dem
+            Auto zum Flughafen Stuttgart, von dort über Amsterdam nach
+            Daressalam, der größten Stadt Tansanias.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <img src="./beach_truck_boat.JPG" />
+          <p>Bildunterschrift</p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>Ein bisschen geschafft, aber positiv aufgeregt
+            müssen wir erstmal die Passkontrolle am Flughafen durchlaufen.
+            Überraschenderweise sind beide Rucksäcke angekommen und abholbereit
+            und das Abenteuer kann losgehen. Bei 10 Grad in Deutschland
+            losgeflogen, schlagen uns hier
+            <span class="h5 d-block p-0 m-0"
+              >trotz 23 Uhr Ortszeit feuchte 30°C</span
+            >
+            ins Gesicht und geben einen ersten Vorgeschmack auf die Hitze der
+            nächsten 10 Wochen. Für die ersten zwei Nächte haben wir ein AirBnB
+            von Deutschland aus gebucht, alles andere wollen wir vor Ort
+            entscheiden. Das Appartment bietet uns einen spektakulären Blick
+            über die Stadt, aber wir gehen nur noch duschen und fallen ins Bett.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>Der Ausblick aus unserem Zimmer ist auch bei
+            Tageslicht überrangend und das Ganze bei schön runtergekühlten
+            Temperaturen. Aber wir wollen natürlich die Stadt erkunden und
+            einige Dinge besorgen. Mit langer Kleidung bewaffnet schlägt uns
+            unten direkt die Hitze der Stadt entgegen. Den ersten Stopp machen
+            wir in einem Supermarkt. Denn Wasser muss man hier immer kaufen. Und
+            man trinkt viel! Kaum treten wir aus dem Laden, werden wir in ein
+            Gespräch verwickelt und unsere minimalen Swahilikenntnisse, die wir
+            uns auf dem Flug angeeignet haben, können angewandt werden. Unser
+            selbst ernannter Guide bringt uns zu einem Platz am Meer, wo er und
+            seine zwei Kollegen schnell Tisch und Stühle herantragen. Uns wird
+            dann Ugali, der typische Maisbrei, mit Fisch und Bohnen serviert und
+            dazu ein Bier. Perfektes Frühstück also. Es dauert dann auch nicht
+            lange bis die handgefertigte Kunst unseres neugewonnenen
+            Stadtführers durch seinen Kumpel in den höchsten Tönen gelobt und
+            angepriesen wird und uns eindrücklich klar gemacht wird, dass unsere
+            Kaufkraft hier existenzbestimmend ist.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>Wir sind wieder im Appartment. Insbesondere die
+            Aufmerksamkeit von Daressalams scheinbar unzähligen selbsternannten
+            Fremdenführern hat uns etwas verunsichert zurück gelassen. Es ist
+            alles sehr hektisch in der Stadt und als Neuankömmlinge wissen wir
+            damit wohl nicht gut umzugehen. "Bloß nicht stehen bleiben", "bloß
+            nicht länger aufs Handy schauen" waren Gedanken, die uns auf unserem
+            ersten Ausflug immer wieder begleitet hatten. Von hier oben auf das
+            ganze Gewusel herabschauend, scheint die Nervosität wieder fast
+            lächerlich. Nunja wir werden mit der Zeit hier schon reinwachsen.
+            Eine kurze Abkühlung im Pool zwischen den Twin Towers, in denen sich
+            unser erster Unterschlupf befindet, sorgt für augenblickliche
+            Abkühlung. Der heiße Stadtwind fegt zwischen den Türmen hindurch und
+            erzeugt kleine Wellen im Wasser. Wir genießen den friedlichen Moment
+            bis das Kitzeln der Sonne uns wieder nach innen schickt.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>Okay, okay, okay! Jetzt gilt es wieder, sich der
+            Stadt zu stellen und noch ein wenig zu erkunden, bevor die Sonne
+            ganz untergeht. Auf dem Weg zu dem Fischmarkt in der Nähe kommen wir
+            am Fähr-Terminal der Kilimanjaro Linie vorbei. Statt auf den
+            gleichnamigen Berg fahren die Schiffe allerdings viermal täglich von
+            Dar zu der zwei Seestunden entfernten Insel Sansibar. Und wie es
+            kommen musste, haben Elias und Annika 10 Minuten später zwei Tickets
+            für den nächsten Morgen um acht Uhr in der Tasche. Aber dazu später
+            mehr. Auf dem weiteren Weg durch die City entwickelt sich eine
+            zunächst unscheinbare Unterhaltung mit einem Local dann auch wieder
+            zur bezahlten Stadttour. Mann oh mann. Wir müssen echt noch lernen,
+            dafür einen besseren Riecher zu bekommen. Wir machen aber gute Miene
+            zu dem Spiel, da unser neuer Freund tatsächlich ein paar spannende
+            Geschichten zu erzählen hat. Wir kommen am lokalen Fischmarkt vorbei
+            und waten durch eine Mischung von Schuppen, Blut und Meerwasser. Der
+            Geruch ist einzigartig und bei dem Blick über die hölzernen
+            Fischerboote, die vor dem Kai im Wasser liegen, freue ich mich in
+            diesem Moment hier zu sein. Weit wegvon zu Hause, mitten in einer
+            der wichtigsten Metropolen Afrikas. Nach dem wir noch das Haus des
+            Präsidenten, ein paar Schulen, ein Kriegerdenkmal und den ältesten
+            Generator Tansanias gezeigt bekommen, kommen wir an einer Markthalle
+            an, in der Gemüse, Obst und Gewürze vertrieben werden. Wir kaufen
+            ein paar Kleinigkeiten, verabschieden unseren Freund mit ein paar
+            Schilling mehr als erwartet und machen uns auf den Heimweg. Was ein
+            erster Tag!
+          </p>
+        </div>
+        <div class="bg-paper">
+          <div class="alert alert-danger">Hier fehlt noch was</div>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>Wir entscheiden uns ohne größere Recherche für
+            den Ort Nungwi im Norden Sansibars, der mit die schönste Strände der
+            Insel haben soll. Erstmal für 3 Nächte buchen wir ein Hostel, dessen
+            Eigentümer sich selbst als Crazyman bezeichnet. Außerdem beschließen
+            wir mit einem öffentlichen Bus - Dalla-Dalla - von Stonetown bis
+            nach Nungwi zu reisen. Dieser soll weniger als 2€ pro Person kosten,
+            es wird aber davor gewarnt, dass einen andere Leute falsch
+            abkassieren wollen. Und so kommt es dann, dass wir verstärkt von
+            einem spanischen Pärchen im Dalla-Dalla, in diesem Fahl eher ein
+            Pick-up als ein Bus, eng gedrängt sitzen und ein Mann uns
+            abkassieren möchte. Ich hatte mehrfach gelesen, dass man unbedingt
+            erst nach dem Losfahren bezahlen soll, aber er bleibt so hartnäckig
+            und auch die Mitfahrenden unterstützen uns nicht, sodass wir schon
+            fast bereit sind ihm das Geld zu geben. Im letzten Moment zeigt sich
+            ein Mann außerhalb des Busses solidarisch mit uns und erklärt uns,
+            dass wir nicht bei diesem Mann bezahlen sollen. Nach einer 2h Fahrt,
+            bei der einfach immer mehr und mehr Leute dazusteigen, obwohl man
+            sich schon 5 mal gedacht hat "jetzt ist es wirklich voll", erreichen
+            wir Nungwi. Auf dem Weg zum Hostel laufen wir entlang der
+            Hauptstraße und abgesehen von den Rucksäcken, haben wir direkt ein
+            gutes Gefühl, dass dieser Ort uns gefallen wird.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>Ein paar Meter abseits der Hauptstraße finden
+            wir dann unser Hostel, eine kleine eingezäunte Oase - mit Turm. Der
+            Eigentümer Crazyman oder Mzushi, was aber auch nicht sein richtiger
+            Name ist, hat alles hier mehr oder weniger selbst gemacht. Damit man
+            von ganz oben einen schönen Blick hat und aus pragmatischen
+            Platzspargründen hat er dann einfach die Zimmer übereinander gebaut.
+            Wir müssen uns erstmal kurz aus den langen Hosen befreien und unter
+            dem Deckenventilator trocknen. Der Besitzer selbst ist grade gar
+            nicht da, eine russische Frau namens Julia hat uns empfangen. Über
+            die nächsten Tage erfahren wir, dass Julia mit ihren zwei 8-jährigen
+            Zwillingstöchtern im Februar auf Sansibar Urlaub gemacht hat und
+            nach dem Angriff auf die Ukraine ihren Rückflug storniert hat.
+            Seitdem sind die drei auf der Insel und lernen alle von 0 Englisch
+            und Swahili. Julia hatte zuerst für ein Ausflugsunternehmen
+            gearbeitet und ist dann vor 3 Monaten dem Crazyman auf der Straße in
+            die Arme gelaufen - und dann haben beide nicht mehr losgelassen.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Neben diesem stetigen und amüsanten Programm im Hostel bietet Nungwi
+            aber tatsächlich paradiesisch schönes Wasser und so sehr können wir
+            es den ganzen Pauschaltouristen, die ihre Hotels in der ersten Reihe
+            haben gar nicht verübeln, dass sie sich für Sansibar entschieden
+            haben. Wir hatten schon seit unserem Tauchgang auf Sardinien im
+            April mit dem Gedanken gespielt einen Tauchkurs zu machen. Da drängt
+            sich natürlich der Indische Ozean mit diesen Rahmenbedingungen
+            geradezu auf. Am ersten Tag sind wir etwas zu spät dran und steuern
+            nur noch eine ausgebuchte Tauchschule an. Der Tag endet dann bei
+            einem Cocktail direkt am Strand trotzdem in perfekter Manier! Die
+            Mission für den zweiten Tag lautet also: Alle Tauchschulen in Nungwi
+            anschauen und vergleichen.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong> Zuerst genießen wir das Frühstück in unserem
+            Hostel, welches unglaublich ist. Wir bekommen hier jeden Tag
+            ungefähr 1 Kilo Obst pro Person und zwar perfekt reife Mangos,
+            Papayas, Ananas, Wassermelone, Orangen und Maracujas. Wir schaffen
+            den Teller immer geradeso, bevor dann nochmal Eier und Toast
+            serviert werden. Gut gestärkt machen wir uns dann auf den Weg und
+            klappern wirklich jede einzelne Tauchschule ab. Zwischendurch haben
+            wir bei manchen das Gefühl, dass eine Sprachbarriere das ganze etwas
+            heikel macht, andere sind auch schon ausgebucht. Der Plan ist also
+            schon fast von einem anderen guten Plan abgelöst, aber wir wollen
+            den übrigen beiden Tauchschulen noch eine Chance geben. Bei unserer
+            letzten Tauchschule bleiben wir dann hängen, können den Preis noch
+            etwas runterhandeln und können direkt mit dem E-learning beginnen,
+            bevor es morgen richtig losgehen soll. Wir sind aufgeregt! Die
+            Lerninhalte gestalten sich dann sogar recht umfangreich, sodass wir
+            uns nur geradeso noch einen Sonnenuntergangsschwimm leisten können
+            ;).
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const vw = Math.max(
+        document.documentElement.clientWidth || 0,
+        window.innerWidth || 0
+      );
+      if (vw >= 576) {
+        // moves papers randomly to left and right
+        const papers = document.getElementsByClassName("bg-paper");
+        Array(...papers).forEach((element) => {
+          element.style.left = `${Math.random() * 8 - 4}rem`;
+        });
+      }
+    </script>
+  </body>
+</html>
