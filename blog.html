@@ -106,29 +106,44 @@
       }
 
       .bg-picture {
+        max-width: 20rem;
         position: relative;
         z-index: 0;
         margin-bottom: 10rem;
       }
 
       .bg-picture > p {
+        position: relative;
+        top: 87%;
         padding: 0% 11% 0% 11%;
+        z-index: 1;
       }
 
       .bg-picture > img {
-        width: 100%;
-        padding: 1rem 11% 1rem 11%;
+        width: 20rem;
+        padding: 6% 6% 6% 6%;
+        height: 20rem;
+        object-fit: contain;
+        background-color: black;
+      }
+
+      .bg-picture > video {
+        width: 20rem;
+        padding: 6% 6% 6% 6%;
+        height: 20rem;
+        object-fit: contain;
+        background-color: black;
       }
 
       .bg-picture::before {
         content: " ";
         position: absolute;
-        height: 128%;
+        height: 116%;
         width: 100%;
-        background-image: url("polaroid.png");
+        background-image: url("polaroid2.png");
         background-size: 100% 100%;
-        top: -14%;
-        z-index: -1;
+        top: 0%;
+        z-index: 0;
       }
 
       @media screen and (min-width: 768px) {
@@ -171,14 +186,17 @@
         <span class="h5 mt-3">Kapitel 1</span>
         <h2 class="h1">Über das Ziel hinausgeschossen</h2>
         <ul class="chapter-keywords mb-4">
-          <li class="badge bg-secondary">Anreise</li>
-          <li class="badge bg-dark">Daressalam</li>
-          <li class="badge bg-secondary">Stonetown, Zanzibar</li>
-          <li class="badge bg-dark">Nungwi, Zanzibar</li>
+          <a class="badge bg-secondary" href="#ref-anreise">Anreise</a>
+          <a class="badge bg-dark" href="#ref-daressalam">Daressalam</a>
+          <a class="badge bg-secondary" href="#ref-stonetown"
+            >Stonetown, Zanzibar</a
+          >
+          <a class="badge bg-dark" href="#ref-nungwi">Nungwi, Zanzibar</a>
         </ul>
       </div>
     </div>
     <div id="beach-bg" class="py-5">
+      <div id="ref-anreise"></div>
       <div class="container my-5" style="max-width: 50rem">
         <div class="bg-paper">
           <p class="text-elias">
@@ -196,10 +214,15 @@
             Daressalam, der größten Stadt Tansanias.
           </p>
         </div>
-        <div class="bg-paper">
-          <img src="./beach_truck_boat.JPG" />
-          <p>Bildunterschrift</p>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img src="./elias_rucksack.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img src="./annika.gif" />
+          </div>
         </div>
+
         <div class="bg-paper">
           <p class="text-annika">
             <strong>A: </strong>Ein bisschen geschafft, aber positiv aufgeregt
@@ -217,6 +240,7 @@
             über die Stadt, aber wir gehen nur noch duschen und fallen ins Bett.
           </p>
         </div>
+        <div id="ref-daressalam"></div>
         <div class="bg-paper">
           <p class="text-annika">
             <strong>A: </strong>Der Ausblick aus unserem Zimmer ist auch bei
@@ -237,6 +261,17 @@
             angepriesen wird und uns eindrücklich klar gemacht wird, dass unsere
             Kaufkraft hier existenzbestimmend ist.
           </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <video src="./dar_from_appartment.MOV" controls></video>
+          </div>
+          <div class="bg-picture">
+            <img src="./beer_at_dirty_beach.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img src="./food_at_dirty_beach.jpeg" />
+          </div>
         </div>
         <div class="bg-paper">
           <p class="text-elias">
@@ -285,9 +320,156 @@
             erster Tag!
           </p>
         </div>
-        <div class="bg-paper">
-          <div class="alert alert-danger">Hier fehlt noch was</div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <video src="./fish_gettin_peeled.MOV" controls></video>
+          </div>
+          <div class="bg-picture">
+            <video
+              src="./blick_vom_kai_des_kleinen_fischmarkts_in_dar.MOV"
+              controls
+            ></video>
+          </div>
+          <div class="bg-picture">
+            <video src="./alles_chillisauce.mov" controls></video>
+          </div>
+          <div class="bg-picture">
+            <img src="./türmsche_in_de_stadt.jpg" />
+          </div>
         </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Ich muss nachts aufstehen, um die Klimaanlage etwas wärmer zu
+            stellen. Die Gier nach einer kühlen Nacht ist ein bisschen
+            ausgeartet. Um 7 fällt uns dann schlagartig wieder ein, dass wir ja
+            gleich los müssen, um die Fähre nach Sansibar zu erwischen. Wir
+            buchen uns noch schnell eine Unterkunft für die erste Nacht auf der
+            Insel, packen zusammen und starten los. Trotz der frühen Uhrzeit ist
+            die Hitze unter dem Gepäck schon wieder schier unerträglich. Zum
+            Glück müssen wir nur ein paar Minuten zu Fuß zum Terminal. Diese
+            paar Minuten reichen auch aus, um wieder von 10 Händlern hartnäckig
+            angequatscht zu werden, die uns Tickets für die Fähre verkaufen
+            wollen. Ob die hier erwerblichen Tickets im Endeffekt gültig wären
+            oder nicht bleibt offen. Wir haben ja zum Glück unsere Tickets schon
+            dabei.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Wir erreichen das Terminal und sofort sprinten Mitarbeiter des
+            Schiffs auf uns zu und reißen (keine Hyperbel) uns unsere großen
+            Rucksäcke aus der Hand. Wir wissen in diesem Gewusel nicht ganz, wo
+            vorne und hinten ist, aber es gibt sowieso keine freie
+            Bewegungsrichtung. Also werden wir in Richtung des Wartebereichs
+            gedrängt, können die Rucksäcke noch mit unserer Telefonnummer
+            beschriften und stehen kurz später mit unseren beiden Portern vor
+            den Gepäckwägen. Es überrascht uns nicht mehr, dass die beiden Geld
+            für diese 50m verlangen, 5€ pro Person erscheinen uns aber dann doch
+            etwas am Ziel vorbei geschossen. Wir hoffen einfach unsere Rucksäcke
+            und wir selbst erreichen sicher und gemeinsam das Ziel der Reise.
+            Wir betreten das Schiff und die Überfahrt lässt die Erwartung für
+            die kommenden Tage wachsen. Wir passieren kleine Sandbänke und
+            Inseln mit weißem Sand und türkisem, kristallklaren Wasser.
+          </p>
+        </div>
+        <div id="ref-stonetown"></div>
+        <!-- <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Sansibar City ist die Hauptstadt der Insel Sansibar und der
+            Hafenteil dieser Stadt nennt sich Stonetown. Das Viertel besteht aus
+            verwinkelten kleinen Gassen mit Häusern aus .. Stein. Das verhindert
+            ein Überangebot von Taxifahrern, welches ansonsten überall dazu
+            gehört. 'Pole pole' also slowly, slowly ist das Motto von Sansibar
+            und der Name ist Programm. Es gibt mehr Touristen als in Dar und der
+            Vibe ist sehr viel entspannter. Händler sind nicht so hartnäckig und
+            man bekommt ein richtiges Urlaubsgefühl.
+          </p>
+        </div> -->
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>
+            Angekommen in Stonetown tragen wir unser Gepäck zum Hostel und der
+            Schweiß rinnt in Strömen. Es ist so unfassbar schwül! Meine
+            Reisebegleitung hat ein paar Worte zu diesem besonderen Ort zu
+            sagen...
+          </p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <video src="./stonetown_VLOG.MOV" controls></video>
+          </div>
+        </div>
+        <div class="alert alert-danger my-5">GRÖsser</div>
+        <!-- <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Nach einem 15min Marsch vom Fährtterminal zu unserem Zimmer können
+            wir unsere Rucksäcke ablegen und unter mir breitet sich eine Lache
+            von Schweiß aus. Zumindest fühle ich mich so und sogar unser
+            Gastgeber lacht mich aus. Aber wie soll ich mit meinen
+            westeuropäischen Genen denn lange Sachen tragen und dabei meine
+            Poren geschlossen halten. Mal sehen, ob meine Haut sich noch
+            adaptieren möchte.
+          </p>
+        </div> -->
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Wir schlendern dann mit neuer und bestimmt 5min trockener Kleidung
+            los und lassen uns durch die Gassen treiben, die einem Schatten
+            spenden und alle nötigen und unnötigen Waren, die man sich
+            vorstellen kann, beherbergen. Märkte in anderen Ländern haben etwas
+            faszinierendes und daher statten wir auch dem Markt von Stonetown
+            einen Besuch ab. Die Geschäftigkeit der Händler, die Farbenpracht
+            von Obst und Gemüse und der Duft von vielen exotischen Gewürzen
+            gepaart mit modernden Abfällen und Fischen, die auf mehr oder
+            weniger sauberen Unterlagen beworben werden, lässt mal wieder
+            interessante Regungen im Magenbereich zu. Wir belassen unsere Käufe
+            bei ein paar Tomaten und einem Currymix.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Die Hitze zieht so viel Energie, dass man einfach nicht lange
+            produktiv sein kann. Das reden wir uns zumindest ein und finden uns
+            kurz später auf der Dachterrasse eines Kaffeehauses wieder. Wahrlich
+            ein Mzungu-Place, aber ein geeister Americano lässt unsere Herzen
+            höher schlagen und meine Poren kurz schließen. Eigentlich wollen wir
+            hier gar nicht weg, aber nach dem zweiten Kaffee raffen wir uns auf
+            und verlassen dieses Kleinod im Trubel der Stadt. Wer weiß,
+            vielleicht kehren wir nochmal an diesen Ort zurück.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Als nächstes besuchen wir das Sklaverei-Museum und es fällt mir
+            schwer die Emotionen dazu in Worte zu fassen. Wir werden in eine
+            unterirdische Kammer geführt, in der einst 75 Menschen tagelang
+            eingepfercht wurden, bevor sie auf dem Sklavenmarkt zum Kauf
+            freigestellt wurden. Man kann nicht mal sitzen so niedrig ist die
+            Decke und die Menschen müssen gestapelt gewesen sein, anders ist das
+            nicht möglich. Es kamen wohl auch nur ein Viertel der Menschen hier
+            wieder lebendig raus. Die Ausstellung bereitet dann noch textlich
+            die historischen Details dieser Zeit auf. Bis ins früher 20.
+            Jahrhundert hat hier Sklaventreiberei stattgefunden. Sansibar war
+            dabei ein wichtiger Umschlagspunkt dieser Zeit. Das ist sicherlich
+            mit Grund, warum für viele Menschen der Massentourismus der
+            westlichen Welt einen komischen Beigeschmack hinterlässt. Wir lassen
+            diesen Ort hinter uns und lassen den Abend an der Strandpromenade
+            ausklingen. Die Abende scheinen für die meisten Männer hier frei zu
+            sein und die meisten nutzen das für Sport. Egal wo man hinschaut
+            wird gekickt, geschwommen, Akrobatik oder Fitness gemacht. Sehr
+            beeindruckend, uns ist es immer noch zu heiß, um unsere Körper zu
+            größerer Betätigung zu bringen.
+          </p>
+        </div>
+        <div id="ref-nungwi"></div>
         <div class="bg-paper">
           <p class="text-annika">
             <strong>A: </strong>Wir entscheiden uns ohne größere Recherche für
@@ -369,6 +551,75 @@
             Lerninhalte gestalten sich dann sogar recht umfangreich, sodass wir
             uns nur geradeso noch einen Sonnenuntergangsschwimm leisten können
             ;).
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong> Cholo ist unser Tauchlehrer. Er spricht gut
+            englisch, hat immer einen lockeren Spruch auf den Lippen und wirkt
+            auf uns Tauch-Frischlinge sehr kompetent. Nach einer kurzen
+            Einweisung im Trockenen machen wir uns schon auf den Weg zum Boot.
+            Dort wartet der verschmitzte Käptn Ali auf uns, dem wir stolz
+            unseren 3-Sätze-Wortschatz Swahili aufführen. "Nina furaha kukutana
+            na wewe, Käptn Ali!" (dazu später mehr...) Während Alis Boot
+            zunächst einen recht nussschaligen Eindruck macht, wird uns schnell
+            klar, dass die Leistung des Außenborders durchaus ausreicht, recht
+            schnell recht schnell zu werden. Und so brettern wir über die Wellen
+            des indischen Ozeans und krallen unsere Fingernägel in die
+            Holzplanken der Sitzbank um nicht versehentlich abzuheben. Knappe 40
+            Minuten später kommen wir bei der Insel Mnemba an. Cholo wirft den
+            Anker aus und rüstet uns mit dem Equipment aus. Das Wasser ist hier
+            knappe drei Meter tief und klar wie Fensterglas. Der weiße Sand des
+            Meeresgrunds reflektiert die Sonnenstrahlen bis zurück ins Boot.
+            Keine schlechte Umgebung um seine ersten Erfahrungen unterwasser zu
+            machen. Der erste Tauchgang besteht zunächst aus ein paar
+            technischen Übungen, die für das Überleben unterwasser essentiell
+            sind. Insgesamt ist das Atmen durch den Regulator und das Halten der
+            Tauchhöhe aber recht intuitiv und so schwimmen wir nach kurzer
+            Konsensfindung <br />(<span style="font-size: 1.5em"
+              >🤿👉🏿👌🏿?, 🤿🤿👌🏻👌🏻!</span
+            >)<br />
+            unter Wasser in Richtung des nahe gelegenen Riffs.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong> An dieser Stelle sei einfach gesagt, dass es
+            absolut fantastisch war. Sowohl das Gefühl unter Wasser zu schweben,
+            als auch die zahllosen Schwärme von Fischen aller erdenklichen
+            Farben und Formen, riesige Seesterne und Korallen soweit das Auge
+            reicht und der gelegentliche Blick einer Muräne oder eines
+            Oktopusses aus einer Felsspalte des Riffs. Es fällt im Nachhinein
+            schwer die Erfahrung in Worte zu fassen und so gerne wir das Erlebte
+            fotografisch festgehalten hätten: Wir waren so schon viel zu
+            beschäftigt mit den vielen Schläuchen und Kabeln, um noch zusätzlich
+            eine Kamera mitzunehmen. Es bleibt uns nichts anderes übrig als
+            diese fantastische Kulisse fest in unserem Gedächtnis abzuspeichern.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong> Über die nächsten 2 Tage machen wir noch 3
+            weitere Tauchgänge und entdecken jedes mal etwas neues. So zum
+            Beispiel eine Hand voll Lion Fishes, die von unserer Aufmerksamkeit
+            ganz unbeeindruckt, majestätisch um ihr Heimatriff schweben. Es
+            macht uns unheimlich viel Spaß und die initiale Skepsis auf Grund
+            des doch recht sportlichen Preises des ganzen Unterfangens ist
+            komplett verflogen. Zwischen den Tauchgängen versorgt uns Ali mit
+            reichlich Mangos, Bananen und Ananas, und der schnelle Zucker wirkt
+            auf der Stelle. Schlussendlich ist die Taucherei auch ganz schön
+            anstrengend.
+          </p>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong> Zurück an Land als frisch gebackene
+            Tauchmeister wartet schon die nächste Überraschung. Crazy Man
+            erwartet uns im Hostel und hat sich spontan dazu entschieden für uns
+            und die drei anderen Gäste zu kochen. Es gibt gebratenen Oktopus,
+            Kartoffeleintopf, Salat, Reis und <strong>Crazy Pasta</strong>. Wir
+            genießen den Abend und lassen unsere Zeit in Nungwi mit dem ein oder
+            anderen Kilimanjaro Bier auf diese Weise sehr gelungen ausklingen.
           </p>
         </div>
       </div>
