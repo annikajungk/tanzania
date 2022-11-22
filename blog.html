@@ -29,10 +29,12 @@
         top: 10em;
       }
       .text-elias {
+        font-family: "Nunito Sans", sans-serif;
         font-style: normal;
         /* text-align: justify; */
       }
       .text-annika {
+        font-family: "Nunito Sans", sans-serif;
         font-style: italic;
         /* text-align: justify; */
       }
@@ -76,6 +78,26 @@
         background-size: 30px 100%;
         background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%),
           linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+        background-position: 0 0;
+      }
+
+      .last-divider {
+        position: relative;
+        background: #2c3e50;
+      }
+
+      .last-divider::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: -0%;
+        top: -30px;
+        z-index: 10;
+        display: block;
+        height: 30px;
+        background-size: 30px 100%;
+        background-image: linear-gradient(45deg, #2c3e50 25%, transparent 25%),
+          linear-gradient(315deg, #2c3e50 25%, transparent 25%);
         background-position: 0 0;
       }
 
@@ -146,6 +168,15 @@
         z-index: 0;
       }
 
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      a {
+        font-family: "Nunito Sans", sans-serif;
+      }
+
       @media screen and (min-width: 768px) {
         /* Styles go here */
         .move-right {
@@ -158,6 +189,12 @@
         }
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="titlepage" class="overflow-hidden">
@@ -183,8 +220,8 @@
     </div>
     <div class="divider">
       <div class="container py-5 text-light" style="max-width: 50rem">
-        <span class="h5 mt-3">Kapitel 1</span>
-        <h2 class="h1">Über das Ziel hinausgeschossen</h2>
+        <span class="h5 py-3">Kapitel 1</span>
+        <h2 class="h1 py-3">Über das Ziel hinausgeschossen</h2>
         <ul class="chapter-keywords mb-4">
           <a class="badge bg-secondary" href="#ref-anreise">Anreise</a>
           <a class="badge bg-dark" href="#ref-daressalam">Daressalam</a>
@@ -229,10 +266,7 @@
             müssen wir erstmal die Passkontrolle am Flughafen durchlaufen.
             Überraschenderweise sind beide Rucksäcke angekommen und abholbereit
             und das Abenteuer kann losgehen. Bei 10 Grad in Deutschland
-            losgeflogen, schlagen uns hier
-            <span class="h5 d-block p-0 m-0"
-              >trotz 23 Uhr Ortszeit feuchte 30°C</span
-            >
+            losgeflogen, schlagen uns hier trotz 23 Uhr Ortszeit feuchte 30°C
             ins Gesicht und geben einen ersten Vorgeschmack auf die Hitze der
             nächsten 10 Wochen. Für die ersten zwei Nächte haben wir ein AirBnB
             von Deutschland aus gebucht, alles andere wollen wir vor Ort
@@ -403,7 +437,6 @@
             <video src="./stonetown_VLOG.MOV" controls></video>
           </div>
         </div>
-        <div class="alert alert-danger my-5">GRÖsser</div>
         <!-- <div class="bg-paper">
           <p class="text-annika">
             <strong>A: </strong>
@@ -445,6 +478,14 @@
             vielleicht kehren wir nochmal an diesen Ort zurück.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img src="./anni_sipping.jpg" />
+          </div>
+          <div class="bg-picture">
+            <img src="./kaffeemitunscharfemausblick.jpeg" />
+          </div>
+        </div>
         <div class="bg-paper">
           <p class="text-annika">
             <strong>A: </strong>
@@ -469,6 +510,14 @@
             größerer Betätigung zu bringen.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <video src="./strandkulisse_stonetown.MOV" controls></video>
+          </div>
+          <div class="bg-picture">
+            <img src="./boot_mit_segel_in_gutem_licht_stonetown.jpeg" />
+          </div>
+        </div>
         <div id="ref-nungwi"></div>
         <div class="bg-paper">
           <p class="text-annika">
@@ -477,22 +526,22 @@
             Insel haben soll. Erstmal für 3 Nächte buchen wir ein Hostel, dessen
             Eigentümer sich selbst als Crazyman bezeichnet. Außerdem beschließen
             wir mit einem öffentlichen Bus - Dalla-Dalla - von Stonetown bis
-            nach Nungwi zu reisen. Dieser soll weniger als 2€ pro Person kosten,
-            es wird aber davor gewarnt, dass einen andere Leute falsch
-            abkassieren wollen. Und so kommt es dann, dass wir verstärkt von
-            einem spanischen Pärchen im Dalla-Dalla, in diesem Fahl eher ein
-            Pick-up als ein Bus, eng gedrängt sitzen und ein Mann uns
-            abkassieren möchte. Ich hatte mehrfach gelesen, dass man unbedingt
-            erst nach dem Losfahren bezahlen soll, aber er bleibt so hartnäckig
-            und auch die Mitfahrenden unterstützen uns nicht, sodass wir schon
-            fast bereit sind ihm das Geld zu geben. Im letzten Moment zeigt sich
-            ein Mann außerhalb des Busses solidarisch mit uns und erklärt uns,
-            dass wir nicht bei diesem Mann bezahlen sollen. Nach einer 2h Fahrt,
-            bei der einfach immer mehr und mehr Leute dazusteigen, obwohl man
-            sich schon 5 mal gedacht hat "jetzt ist es wirklich voll", erreichen
-            wir Nungwi. Auf dem Weg zum Hostel laufen wir entlang der
-            Hauptstraße und abgesehen von den Rucksäcken, haben wir direkt ein
-            gutes Gefühl, dass dieser Ort uns gefallen wird.
+            nach Nungwi zu reisen. Dieser soll 2300 Schilling (ungefähr 1€) pro
+            Person kosten, es wird aber davor gewarnt, dass Betrüger hier
+            regelmäßig falsch abkassieren wollen. Und so kommt es dann, dass wir
+            verstärkt von einem spanischen Pärchen im Dalla-Dalla, in diesem
+            Fall eher ein Pick-up als ein Bus, eng gedrängt sitzen und ein Mann
+            uns abkassieren möchte. Ich hatte mehrfach gelesen, dass man
+            unbedingt erst nach dem Losfahren bezahlen soll, aber er bleibt so
+            hartnäckig und auch die Mitfahrenden unterstützen uns nicht, sodass
+            wir schon fast bereit sind ihm das Geld zu geben. Im letzten Moment
+            zeigt sich ein Mann außerhalb des Busses solidarisch mit uns und
+            erklärt uns, dass wir nicht bei diesem Mann bezahlen sollen. Nach
+            einer 2h Fahrt, bei der einfach immer mehr und mehr Leute
+            dazusteigen, obwohl man sich schon 5 mal gedacht hat "jetzt ist es
+            wirklich voll", erreichen wir Nungwi. Auf dem Weg zum Hostel laufen
+            wir entlang der Hauptstraße und abgesehen von den Rucksäcken, haben
+            wir direkt ein gutes Gefühl, dass dieser Ort uns gefallen wird.
           </p>
         </div>
         <div class="bg-paper">
@@ -515,6 +564,12 @@
             die Arme gelaufen - und dann haben beide nicht mehr losgelassen.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img src="./crazy_mans_turm.JPG" />
+          </div>
+        </div>
+
         <div class="bg-paper">
           <p class="text-annika">
             <strong>A: </strong>
@@ -553,6 +608,20 @@
             ;).
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img src="./crazy_mans_obstteller.JPG" />
+          </div>
+          <div class="bg-picture">
+            <img src="./beach_please.JPG" />
+          </div>
+          <div class="bg-picture">
+            <img src="./anni_sitzt_am_strand_nungwi.jpg" />
+          </div>
+          <div class="bg-picture">
+            <img src="./elisumrissimsonnenunterganginnungwi.jpg" />
+          </div>
+        </div>
         <div class="bg-paper">
           <p class="text-elias">
             <strong>E: </strong> Cholo ist unser Tauchlehrer. Er spricht gut
@@ -582,6 +651,11 @@
             unter Wasser in Richtung des nahe gelegenen Riffs.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img src="./eli_am_wigglen.gif" />
+          </div>
+        </div>
         <div class="bg-paper">
           <p class="text-elias">
             <strong>E: </strong> An dieser Stelle sei einfach gesagt, dass es
@@ -597,6 +671,21 @@
             diese fantastische Kulisse fest in unserem Gedächtnis abzuspeichern.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img src="./happy_anni_aufm_tauchboot.JPG" />
+          </div>
+
+          <div class="bg-picture">
+            <img src="./tauchboot_vom_wasser_aus.JPG" />
+          </div>
+          <div class="bg-picture">
+            <img src="./eli_okay.JPG" />
+          </div>
+          <div class="bg-picture">
+            <video src="./taucheli_macht_rolleli.MP4" controls></video>
+          </div>
+        </div>
         <div class="bg-paper">
           <p class="text-elias">
             <strong>E: </strong> Über die nächsten 2 Tage machen wir noch 3
@@ -611,6 +700,11 @@
             anstrengend.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <video src="./lionfish_on_video.MP4" controls></video>
+          </div>
+        </div>
         <div class="bg-paper">
           <p class="text-elias">
             <strong>E: </strong> Zurück an Land als frisch gebackene
@@ -622,6 +716,16 @@
             anderen Kilimanjaro Bier auf diese Weise sehr gelungen ausklingen.
           </p>
         </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <video src="./crazy_pasta.MOV" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last-divider">
+      <div class="container py-5 text-light" style="max-width: 50rem">
+        <p class="text-center h1">Bis bald...</p>
       </div>
     </div>
     <script>
