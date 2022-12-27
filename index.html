@@ -61,6 +61,41 @@
         background-size: contain;
         background-position: center center;
       }
+      #steppe-bg {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./images/steppe_big.jpg");
+        background-repeat: repeat-y;
+        background-size: contain;
+        background-position: center center;
+      }
+      /* #5d5952 */
+      #muhimbili-bg {
+        background-image: linear-gradient(
+            0deg,
+            rgba(170, 170, 170, 0.5),
+            rgba(170, 170, 170, 0.5)
+          ),
+          url("./images/muhimbili_bg_editted.jpg");
+        background-repeat: repeat-y;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      #dar-bg {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("./images/asphalt_bg_editted.jpg");
+        background-repeat: repeat-y;
+        background-size: contain;
+        background-position: center center;
+      }
       .divider {
         position: relative;
         background: #2c3e50;
@@ -122,6 +157,32 @@
         height: 128%;
         width: 100%;
         background-image: url("./images/bg-paper.png");
+        background-size: 100% 100%;
+        top: -14%;
+        z-index: -1;
+      }
+
+      .bg-paper2 {
+        position: relative;
+        z-index: 0;
+        margin-bottom: 10rem;
+      }
+
+      .bg-paper2 > p {
+        padding: 0% 14% 0% 14%;
+      }
+
+      .bg-paper2 > img {
+        width: 100%;
+        padding: 1rem 11% 1rem 11%;
+      }
+
+      .bg-paper2::before {
+        content: " ";
+        position: absolute;
+        height: 128%;
+        width: 100%;
+        background-image: url("./images/paper_perforated.png");
         background-size: 100% 100%;
         top: -14%;
         z-index: -1;
@@ -298,7 +359,7 @@
         </div>
         <div class="d-flex flex-wrap justify-content-around">
           <div class="bg-picture">
-            <video src="./videos/dar_from_appartment.MOV" controls></video>
+            <video src="./videos/dar_from_appartment.mov" controls></video>
           </div>
           <div class="bg-picture">
             <img loading="lazy" src="./images/beer_at_dirty_beach2.jpeg" />
@@ -356,11 +417,11 @@
         </div>
         <div class="d-flex flex-wrap justify-content-around">
           <div class="bg-picture">
-            <video src="./videos/fish_gettin_peeled.MOV" controls></video>
+            <video src="./videos/fish_gettin_peeled.mov" controls></video>
           </div>
           <div class="bg-picture">
             <video
-              src="./videos/blick_vom_kai_des_kleinen_fischmarkts_in_dar.MOV"
+              src="./videos/blick_vom_kai_des_kleinen_fischmarkts_in_dar.mov"
               controls
             ></video>
           </div>
@@ -515,7 +576,7 @@
         </div>
         <div class="d-flex flex-wrap justify-content-around">
           <div class="bg-picture">
-            <video src="./videos/strandkulisse_stonetown.MOV" controls></video>
+            <video src="./videos/strandkulisse_stonetown.mov" controls></video>
           </div>
           <div class="bg-picture">
             <img
@@ -733,7 +794,7 @@
         </div>
         <div class="d-flex flex-wrap justify-content-around">
           <div class="bg-picture">
-            <video src="./videos/crazy_pasta.MOV" controls></video>
+            <video src="./videos/crazy_pasta.mov" controls></video>
           </div>
         </div>
       </div>
@@ -747,7 +808,7 @@
         </ul>
       </div>
     </div>
-    <div id="beach-bg" class="py-5">
+    <div id="dar-bg" class="py-5">
       <div id="ref-daressalam2"></div>
       <div class="container my-5" style="max-width: 50rem">
         <div class="bg-paper">
@@ -854,10 +915,10 @@
         </ul>
       </div>
     </div>
-    <div id="beach-bg" class="py-5">
+    <div id="muhimbili-bg" class="py-5">
       <div id="ref-muhimbili2"></div>
       <div class="container my-5" style="max-width: 50rem">
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-annika">
             <strong>A: </strong>Der erste Morgen startet entspannt um 7 Uhr. Wir
             pushen uns beide, um in den Arbeitsmodus zu kommen und machen uns um
@@ -872,7 +933,7 @@
             "los geht".
           </p>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-annika">
             <strong>A: </strong>Das Programm welches wir innerhalb von sechs
             Stunden erledigen besteht immerhin aus Gebühren bezahlen,
@@ -882,7 +943,7 @@
             Eigeninitiative etwas dämpfen. Wir haben aber Bock!
           </p>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-elias">
             <strong>E: </strong>
             Die Einteilung der Studierenden in die verschiedenen Departments hat
@@ -929,7 +990,7 @@
             <video src="./videos/central_park_bats.mov" controls></video>
           </div>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-annika">
             <strong>A: </strong>Heute gehen wir in den OP. Meine beiden
             MitstreiterInnen auf der Uro verspäten sich und so entscheide ich
@@ -951,7 +1012,7 @@
           </p>
         </div>
 
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-elias">
             <strong>E: </strong>Mein erster Tag im OP verläuft tatsächlich auch
             sehr cool. Eine kleine Patientin mit einer angeborenen Fehlbildung
@@ -978,7 +1039,7 @@
             <img loading="lazy" src="./images/goethe_fussball_japan.GIF" />
           </div>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-annika">
             <strong>A: </strong>Langsam habe ich mich mit den zwei Residents
             (~Assistenzärzte) Dr. Kassy und Dr. Danny eingegroved. Für mich ist
@@ -1004,7 +1065,7 @@
             sehe dann in den nächsten 5h zwei OPs..
           </p>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-annika">
             <strong>A: </strong>Für den Nachmittag hatten wir einen Ausflug
             geplant. Wir setzen mit der Fähre über den Kanal, der in den
@@ -1036,7 +1097,7 @@
             <video src="./videos/skinny_eli_from_the_sea.mp4" controls></video>
           </div>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-elias">
             <strong>E: </strong> Es ist der Freitag unserer ersten Woche am
             Krankenhaus. Ich treffe mich morgens mit den anderen Deutschen im
@@ -1067,7 +1128,7 @@
             <img loading="lazy" src="./images/elias_am_scrubben.jpg" />
           </div>
         </div>
-        <div class="bg-paper">
+        <div class="bg-paper2">
           <p class="text-elias">
             <strong>E: </strong> Nachmittags fahren Annika und ich noch auf den
             großen Kariakoo-Markt. Wir erhoffen uns ein T-Shirt für Connie's
@@ -1086,6 +1147,328 @@
         </div>
       </div>
     </div>
+    <div class="divider">
+      <div class="container py-5 text-light" style="max-width: 50rem">
+        <span class="h5 py-3">Kapitel 4</span>
+        <h2 class="h1 py-3">Inside Simba's Kingdom</h2>
+        <ul class="chapter-keywords mb-4">
+          <a class="badge bg-secondary" href="#ref-moshi">Moshi</a>
+          <a class="badge bg-dark" href="#ref-tarangire">Tarangire</a>
+          <a class="badge bg-secondary" href="#ref-serengeti">Serengeti</a>
+          <a class="badge bg-dark" href="#ref-ngorongoro">Ngorongoro</a>
+        </ul>
+      </div>
+    </div>
+    <div id="steppe-bg" class="py-5">
+      <div class="container my-5" style="max-width: 50rem">
+        <div id="ref-moshi"></div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Unsere Freunde aus Heidelberg, die ihr PJ in Moshi am Fuß des
+            Kilimanjaros machen, haben mit einer größeren Gruppe eine Safari
+            organisiert. Zu unserem Glück sind noch zwei Plätze frei und so
+            entscheiden wir uns kurzer Hand das ganze zu einem gemeinsamen
+            Abenteuer zu machen. Die einfachste Anreise nach Moshi scheint eine
+            10-stündige Busfahrt zu sein. Wir nehmen den ersten Bus, der auf die
+            Minute pünktlich um 6 Uhr startet. Es gibt keine Klimaanlage und für
+            1,93m große Menschen auch nur begrenzt viel Beinfreiheit. Aber mit
+            offenen Fenstern und den Beinen im Gang vergeht die Zeit fast, wie
+            im Flug.. In Moshi fällt als erstes auf, dass es nicht so schwül
+            ist, wir brauchen nachts sogar eine Decke. Was für ein Paradies. Die
+            drei Jungs holen uns vom Bus ab und wir fahren zu ihrer Unterkunft
+            auf dem Compound der Klinik. Einstöckige Häuser, in denen immer 7
+            Leute Platz finden und alle Hausbewohner sind super nett und
+            arbeiten in irgendeiner Form am Krankenhaus. Auch einmal um den
+            halben Globus geflogen ist die Dynamik, wie in Heidelberg und es ist
+            sehr schön mal wieder gute Freunde um sich zu haben. Nachdem 17
+            Safari-Teilnehmer*innen ihre dicken Bündel an Schilling in eine
+            Einkaufstüten des Organisators geleert haben, bleibt nur noch zu
+            hoffen, dass dieser nicht unterwegs überfallen wird und sich niemand
+            bei den Plätze in den Jeeps verzählt hat. Elias wird spontan noch
+            das Fell geschoren, damit keine Tiere ihn für ihresgleichen halten.
+            Wir genießen anschließend noch ein Kilimanjaro mit Blick auf den
+            Berg.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/geschorenwordensein.jpeg" />
+          </div>
+        </div>
+
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>
+            Endlich ist es soweit. Nach einer kurzen Nacht treffen wir uns alle
+            zusammen vor dem Eingang des Bungalows und warten auf das Eintreffen
+            der Jeeps. Es ist noch sau früh und die Morgendämmerung hüllt den
+            Doctor's Compound in ein ganz besonderes Licht, als unsere Jeeps auf
+            das Gelände rollen. Es sind 3 riesige braune Stahlmonster mit
+            jeweils 8 Sitzen, Ersatzrad und einem aufklappbaren Dach. Last
+            minute werden wir von Jonny noch mit individualisierten Lunch
+            Paketen ausgestattet und dann steigen wir ein. Zu Annika mir und den
+            3 Jungs gesellt sich noch der gute Paul. Wir fragen ihn noch einmal
+            ob er sich das wirklich antun will mit unserer sehr eingespielten
+            und gerne etwas albern aufgelegten Truppe. Er sagt ja und es wird
+            sich noch rausstellen, dass er quasi perfekt in diese Mannschaft
+            hineinpasst.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/safari_heroes.jpeg" />
+          </div>
+        </div>
+        <div id="ref-tarangire"></div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>Auf unserer Fahrt Richtung Tarangire
+            Nationalpark kommen wir unter anderem durch Arusha und laden
+            unterwegs unseren Koch sowie Equipment, Zelte und Co ein. Am frühen
+            Nachmittag stehen wir vor dem Eingangstor zum Nationalpark. Ein
+            riesiger Elefantenschädel schmückt die Einfahrt. Wir fahren in den
+            Park und die Aufregung steigt langsam. Wir entdecken die ersten
+            Gazellen und Wasserböcke. Zu diesem Zeitpunkt wird noch für jedes
+            noch so kleine und unscheinbare Tier für eine extensive Fotosession
+            angehalten. Die Fülle an Fauna, welche die nächsten Tage uns bieten
+            würden, wird das noch ändern. Eine knappe halbe Stunde nach der
+            Einfahrt in den Park erhält unser Fahrer einen Anruf von einem
+            seiner Kollegen. Sie besprechen sich kurz, der Kurs wird geändert
+            und wenig später hält unser Jeep vor einer kleinen Buschformation
+            an. Es verstecken sich Löwen darin. Aufgeregt machen wir Fotos und
+            beobachten die Großkatzen, die sich von unserer Präsenz wenig
+            beeindrucken lassen.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/safari_auf_safari.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/eli_mit_eli_bone.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/one_pumba_in_mud.jpeg" />
+          </div>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>
+            Unsere Nachmittags-Snack-Pause machen wir in einem kleinen umzäunten
+            Areal inmitten des Parks. Die dauerhaften Bewohner dieser
+            Touristen-Speisestätte sind eine Großfamilie von Affen, die sich
+            darauf spezialisiert haben Äpfel, Nüsse und Safttüten aus den
+            Lunchpaketen der Reisenden zu stibitzen. Wir versuchen vehement die
+            cleveren Vierbeiner fern zu halten. Es stellt sich jedoch schnell
+            heraus, dass wir wesentlich mehr Respekt vor den kleinen Äffchen
+            haben, als sie vor uns. Ein Affe schäut nicht davor zurück einen der
+            Jungs aus unserer Gruppe anzuspringen, um sich danach genüsslich mit
+            einem Mangosaft auf einem Akazienast niederzulassen.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/affe_mit_baby.jpg" />
+          </div>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>
+            An diesem Mittag sehen wir außerdem noch Giraffen, Elefanten und
+            Wasserbüffel. Abends sind wir ein letztes mal außerhalb der Zelte
+            untergebracht. Das Abendessen wird durch einen traditionelle
+            Aufführung einer lokalen Tanzgruppe untermalt. Später abends dürfen
+            wir noch bezeugen wie Deutschland in einem spannenden
+            Vorrundenfinale gegen Costa Rica aus der WM fliegt, bevor wir uns in
+            der kleinen Strohhütte aufs Ohr legen.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/annika_macht_foto.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/elefanten_im_gras.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img
+              loading="lazy"
+              src="./images/elefanten_laufen_ueber_die_strasse.jpeg"
+            />
+          </div>
+          <div class="bg-picture">
+            <video src="./videos/giraffe_am_essen.mov" controls></video>
+          </div>
+        </div>
+        <div id="ref-serengeti"></div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong>
+            Frisch gestärkt mit Toast, Pancakes und Kaffee fahren wir erstmal
+            eine ganze Weile mit den Jeeps zum Serengeti Nationalpark. Mit guter
+            Gesellschaft und schönem Blick vergeht die Zeit aber sehr schnell.
+            Wir passieren auch den Ngorongoro-Krater und können vom Kraterrand
+            schon einen Vorgeschmack für unseren Besuch gewinnen. Mittags
+            erreichen wir dann das Gate zum Park. Wir machen extra noch vorher
+            Mittagspause, da die Gebühr für 24h gilt und wir diese natürlich
+            bestmöglich nutzen wollen. Zu Beginn brettert man eine schier
+            endlose Schotterpiste geradeaus in den Park. Plötzlich bremst unser
+            Fahrer relativ abrubt ab. Hier steht der einzige Baum in Sichtweite
+            und im Schatten am Fuße des Stammes haben es sich zwei Geparden
+            gemütlich gemacht. Beeindruckt von diesem unerwarteten Fund setzen
+            wir den Weg zu unserem Camp in der Mitte des Parks fort. Unterwegs
+            sehen und riechen wir noch einen Nilpferdtümpel und bekommen einen
+            Eindruck von der Weite des Nationalparks. Obwohl sich die Autos auf
+            diesem großen Gelände gut verteilen, sind auf einmal 15 Jeeps auf
+            einem Haufen zu sehen. Wir schließen uns an und können einen mehr
+            oder wenigen guten Blick auf einen Leoparden im Baum ergattern.
+            Wieder ein Tier von der Liste, check! Relativ zeitig beenden wir
+            dann den Drive am Camp, wir wären alle gerne noch weiter gefahren,
+            aber spielen als Ausgleich "welches Tier bin ich" bevor es
+            Abendessen Nudeln gibt. Nudeln!! Ein kleiner
+            Teewasserverbrennungsschreck macht auch diese einzigartige Kulisse
+            nicht kaputt. Mit 5 Jungs unterwegs zu sein, heißt auch, dass ab und
+            zu irgendwelche Duelle und Wettkämpfe ausgefochten werden müssen.
+            Das Ergebnis: man kann nicht 5 Toasts in einer Minute essen und
+            unsere Urlaubskasse hat ein paar Euro dazugewonnen.. Die Nacht im
+            Zelt ist angenehm kühl und der Schlaf wird nur von ein paar Hyänen
+            unterbrochen, die um unsere Zelte schleichen.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/cheetah.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/see_mit_nilpferd.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/auf_dem_jeep_dach.jpeg" />
+          </div>
+        </div>
+        <div class="bg-paper">
+          <p class="text-annika">
+            <strong>A: </strong> nächsten Morgen soll es vor dem Frühstück
+            losgehen, sodass wir die Tiere in ihren aktiven Morgenstunden
+            beobachten können. Am Ende sind wir um 6 Uhr bereit, aber unser
+            Fahrer hat seinen eigenen Zeitplan oder eben keinen. In den nächsten
+            4 Stunden sehen wir dann Giraffen kurz vor der Paarung,
+            Wasserbüffel, eine RIESIGE Herde Zebras und Gnus, die gar nicht mehr
+            aufhören will und Löwen. Löwen sind jedes Mal aufs Neue faszinierend
+            und dieses mal, sind wir extrem nah dran. Zu toppen wäre das ganze
+            nur, wenn die drei Löwen auf der Fläche vor uns jetzt jagen würden,
+            denken wir. Auf einmal flitzt eine Gazelle zwischen den Löwen
+            hindurch und kann tatsächlich ihren Jägern entfliehen. Die Löwen
+            legen sich anschließend in den Ästen eines großen Baums nieder, auch
+            ein sehr beeindruckendes Bild. Nach einem Brunch, brettern wir sehr
+            zügig zurück zum Parkeingang, um die 24h nicht zu überschreiten und
+            fahren von hier aus zu unserem Camp am Kraterrand.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/baum_mit_geier.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/baum_mit_loewe.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/zebras_in_der_ebene.jpeg" />
+          </div>
+          <div class="bg-picture">
+            <video src="./videos/lion_yawning.mov" controls></video>
+          </div>
+        </div>
+        <div id="ref-ngorongoro"></div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>
+            Nach einem langen Safaritag und der Rückfahrt durch die endlosen
+            Grasländer kommen wir am Rand des Ngorongoro-Kraters an. Wir haben
+            noch ein paar Stunden bevor die Sonne untergeht und so wandern wir
+            auf dem Gelände umher und betrachten die Kraterebene aus der Ferne
+            von einer kleinen Anhöhe oder dem Dach des Toilettenhäuschens.
+            Hunger macht sich breit und alle freuen sich auf das Abendessen. Der
+            einzige der mit dem Futtern nicht warten will ist ein ausgewachsener
+            Elefantenbulle, der sich durch das Dickicht dem Zeltplatz nähert. Er
+            wird augenblicklich zum Zentrum der Aufmerksamkeit und mit großem
+            Respekt beobachten wir das majestätische Tier bei seiner
+            Lieblingsbeschäftigung (bis zu 18h verbringen die Rüsseltiere am Tag
+            mit dem Fressen). Afrikanische Elefanten werden bis zu 6 Tonnen
+            schwer und der Anblick dieses riesigen Tiers lässt vermuten, ist
+            durchaus angsteinflößend. Dem Herrn Elefant ist das Beisein der
+            kleinen Menschchen jedoch herzlich egal. Und so kommt es das der
+            Elefant einfach quer über den Zeltplatz marschiert und wir ihn aus
+            nächster Nähe betrachten können. Die Guides kriegen auch schnell
+            Wind von der Präsenz des Tiers und kommen sichtlich nervös
+            angerannt, um sicher zu gehen, dass sich niemand zu sehr dem
+            Elefanten nähert. Zwar sind afrikanische Elefanten durchaus als sehr
+            friedlich bekannt, allerdings handelt es sich immernoch um ein 6
+            Tonnen schweres wildes Tier inklusive Rüssel und Stoßzähnen. Als es
+            den Elefanten etwas an seiner rechten Seite juckt, beschließt er
+            sich an einem beeindruckend dicken Affenbrotbaum zu reiben. Dieser
+            beginnt beächtlich zu wackeln und das Geräusch von absplitternder
+            Rinde zeugt von der ungeheuren Kraft des Elefanten. Später am Abend
+            dürfen wir noch bezeugen, dass unsere Zeltwiese nicht nur das
+            zuhause von einzelnen Elefanten ist: Eine Herde Zebras mit circa 100
+            Tieren hat sich auf der Grasfäche breitgemacht und spaziert kreuz
+            und quer zwischen den Zelten einher.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/elis.jpg" />
+          </div>
+          <div class="bg-picture">
+            <video src="./videos/elefant_vs_akazie.mov" controls></video>
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/zeltplatz_im_morgenlicht.jpeg" />
+          </div>
+        </div>
+        <div class="bg-paper">
+          <p class="text-elias">
+            <strong>E: </strong>
+            Am nächsten Tag fahren wir mit den Jeeps hinab in den Krater. Der
+            Ngorongoro-Krater ist dafür bekannt, dass die Dichte an diversen
+            Wildtieren zu den höchsten der Welt gehört. Neben den schon aus der
+            Ferne sichtbaren Herden an Zebras, Büffeln und Antilopen beeindruckt
+            uns vor allem die unglaubliche Szenerie. Mit einem großen See in der
+            Mitte ist der Krater von allen Seiten von ein paar hundert Meter
+            hohen Bergwänden umgeben. Es gibt einen Wald, einen Sumpf und
+            ansonsten große steppenartige Flächen in denen die Huftiere grasen.
+            Kaum sind wir in der Kraterebene angekommen, sehen wir wie ein
+            männlicher Löwe ein frischerlegtes Zebra zurück in sein Zuhause
+            schleppt. Nilpferde, Flamingos, Hyänen und Büffel zählen außerdem zu
+            den Tieren, die wir an diesem morgen beobachten dürfen. Wir hatten
+            etwas gehofft noch Nashörer zu sehen bekommen, da der
+            Ngorongorokrater einer der letzten Orte der Welt ist, in denen noch
+            Spitzmaulnashörer anzutreffen sind. Dieser Wunsch bleibt uns leider
+            verwehrt. Nichtsdestotrotz machen wir uns sehr zufrieden nach einer
+            absolut gelungenen Safari auf den Rückweg nach Moshi. Kaum sind
+            wieder zurück auf der Straße fallen alle erschöpft in den Schlaf und
+            als wir wieder aufwachen sind wir schon fast angekommen und es
+            erwartet uns bereits der Blick auf den mächtigen Kilimanjaro.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/zebrakill_vom_jeep_aus.jpeg" />
+          </div>
+
+          <div class="bg-picture">
+            <img
+              loading="lazy"
+              src="./images/loewen_unter_der_ngorongoro_akazie_naeher.jpeg"
+            />
+          </div>
+          <div class="bg-picture">
+            <img loading="lazy" src="./images/zebras_im_ngorongoro.jpeg" />
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="last-divider">
       <div class="container py-5 text-light" style="max-width: 50rem">
         <p class="text-center h1">Bis bald...</p>
@@ -1099,8 +1482,12 @@
       if (vw >= 576) {
         // moves papers randomly to left and right
         const papers = document.getElementsByClassName("bg-paper");
+        const papers2 = document.getElementsByClassName("bg-paper2");
         Array(...papers).forEach((element) => {
           element.style.left = `${Math.random() * 8 - 4}rem`;
+        });
+        Array(...papers2).forEach((element) => {
+          element.style.left = `${Math.random() * 4 - 2}rem`;
         });
       }
     </script>
